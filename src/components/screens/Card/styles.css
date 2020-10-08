@@ -1,0 +1,16 @@
+.containerCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-color: #2980b9;
+    border-radius: 25%;
+}
+
+.containerCard p {
+    font-size:25px;
+    font-weight: bold;
+    color: black;
+}

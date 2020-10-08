@@ -5,7 +5,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
   }
-  state= {name:"Faustoo",year:2021};
+  state= {name:"Liwel",year:2021};
 
   render() {
     return(
