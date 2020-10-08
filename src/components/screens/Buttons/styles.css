@@ -1,0 +1,24 @@
+.containerButtons {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 200px;
+    margin-top: 30px;
+}
+
+.containerButtons button {
+    margin: 5px;
+    height: 50px;
+    border-radius: 5px;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.containerButtons button:nth-child(2) {
+    background-color: #27ae60;
+    color: black;
+}
+
+.containerButtons button:hover {
+    cursor: pointer;
+}
