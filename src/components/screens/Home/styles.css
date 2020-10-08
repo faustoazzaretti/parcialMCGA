@@ -7,3 +7,42 @@
     background-color: #2c3e50;
 }
 
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 70vh;
+    border: 1px solid white;
+}
+
+.student {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 50%;
+    border: 1px solid white;
+}
+
+.student p {
+    font-size:25px;
+    font-weight: bold;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 10%;
+}
+
+.buttons button {
+    width: 100%;
+    height: 30px;
+    margin: 2px;
+}
