@@ -1,0 +1,13 @@
+.inputsCard {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="text"] {
+    margin: 10px;
+}
