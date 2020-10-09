@@ -3,23 +3,22 @@ import Home from './screens/Home/index';
 import Edit from './screens/Edit/index';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  state= {name:"Suki",year:"2020"};
+  state= {
+    name:"Suki",
+    year:"2020",
+    status:true,
+    };
 
-  
   render() {
     return(
       <>
-      <Home 
+      { this.state.status ? <Home 
         name={this.state.name}
         year={this.state.year}
-      />
-      <Edit 
+      /> : <Edit 
         name={this.state.name}
         year={this.state.year}
-      />
+      />}
       </>
     )
   }

@@ -7,7 +7,8 @@ class Edit extends React.Component {
         super(props)
         this.state = {
             name: this.props.name,
-            year: this.props.year
+            year: this.props.year,
+            b1:'asdasd'
         }
     }
     
