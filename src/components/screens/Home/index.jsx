@@ -9,11 +9,17 @@ const Home = (props) => (
             <Card 
                 name={props.name}
                 year={props.year}
-            /> 
+                status={props.status}
+            />
             <Buttons
                 b1={'Editar Informacion'}
                 b2={'Agregar Contador'}
+                name={props.name}
+                year={props.year}
+                status={props.status}
+                onClick={props.onClick}
             />
+            {/* {console.log(props)} */}
         </div>
     </div>
 )
