@@ -1,20 +1,19 @@
 import React from 'react';
 import Home from './screens/Home/index';
 import Edit from './screens/Edit/index';
-import ListCounts from './screens/ListCounts/index';
+import ListCount from './screens/ListCounts/index';
 
 class App extends React.Component {
     constructor(props) {
       super(props)
-
-      var today = new Date(),
-            date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+      var d = new Date();
+      
 
       this.state= {
         name:"Fausto",
         year:"1995",
         status:true,
-        date: date
+        date: Date("23 Jun 2017 07:45:00")
       };
     }
 
@@ -22,27 +21,27 @@ class App extends React.Component {
         this.setState({
             status: this.state.status ? false : true
           });
+
     }
 
     render() {
         return(
         <>
-        <ListCounts
-          date={this.state.date}
-        />
-        {/* { this.state.status ? <Home 
+        { this.state.status ? <Home 
             name={this.state.name}
             year={this.state.year}
             status={this.state.status}
             onClick = {this.changeScreen}
+            date={this.state.date}
+            
             
         /> : <Edit 
             name={this.state.name}
             year={this.state.year}
             status={this.state.status}
-        />} */}
+            date={this.state.date}
+        />}
         </>
-        
         )
     }
 }

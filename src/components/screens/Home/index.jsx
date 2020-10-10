@@ -3,25 +3,33 @@ import React from 'react';
 import Card from '../Card/index';
 import Buttons from '../Buttons/index';
 
-const Home = (props) => (
-    <div className="containerHome">
-        <div className="card">
-            <Card 
-                name={props.name}
-                year={props.year}
-                status={props.status}
-            />
-            <Buttons
-                b1={'Editar Informacion'}
-                b2={'Agregar Contador'}
-                name={props.name}
-                year={props.year}
-                status={props.status}
-                onClick={props.onClick}
-            />
-            {/* {console.log(props)} */}
-        </div>
-    </div>
-)
 
+class Home extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
+    render() {
+        return (
+            <div className="containerHome">
+            <div className="card">
+                <Card 
+                    name={this.props.name}
+                    year={this.props.year}
+                    status={this.props.status}
+                />
+                <Buttons
+                    b1={'Editar Informacion'}
+                    b2={'Agregar Contador'}
+                    name={this.props.name}
+                    year={this.props.year}
+                    status={this.props.status}
+                    onClick={this.props.onClick}
+                />
+                {/* {console.log(props)} */}
+            </div>
+        </div>
+    )
+    }
+}
 export default Home;

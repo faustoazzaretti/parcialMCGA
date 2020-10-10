@@ -6,7 +6,7 @@ class Count extends React.Component {
         return(
             <div className="containerCount">
                 Contador Nro: {this.props.id}
-                <p>Creado: 10/10/2020</p>
+                <p>Creado: {this.props.date}</p>
                 <p>Actualizado: 10/10/2020</p>
                 <div className="buttonsCount">
                     <button>-</button>

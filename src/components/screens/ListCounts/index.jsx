@@ -9,7 +9,7 @@ class ListCounts extends React.Component {
         this.state = {
             date:props.date,
             countsArray:[],
-            id: ""    
+            id: "",
         }
     }
     
@@ -38,19 +38,20 @@ class ListCounts extends React.Component {
             <div className="containerListCounts">
                 <h1>Lista de Contadores</h1>
                 <button onClick={this.addCount}>Agregar Contador</button>
-                <p>{this.state.date}</p>
-
-                {
-                    this.state.countsArray.map((count,index)=>{
-                        return(
-                            <Count
-                                key={count.id}
-                                id={count.id}
-                                delete={this.deleteCount.bind(this,index)}
-                            />
-                        )
-                    })
-                }
+                    <div className="countsList">
+                        {
+                        this.state.countsArray.map((count,index)=>{
+                            return(
+                                <Count
+                                    key={count.id}
+                                    id={count.id}
+                                    delete={this.deleteCount.bind(this,index)}
+                                    date={this.props.date}
+                                />
+                            )
+                        })
+                        }
+                    </div>               
             </div>
         )
     }
