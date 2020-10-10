@@ -1,19 +1,22 @@
 import './styles.css';
 import React from 'react';
 
-const Count = () => {
-    return(
-        <div className="containerCount">
-            <p>Creado: 10/10/2020</p>
-            <p>Actualizado: 10/10/2020</p>
-            <div className="buttonsCount">
-                <button>-</button>
-                <p>14</p>
-                <button>+</button>
-                <button>Eliminar</button>
+class Count extends React.Component {
+    render() {
+        return(
+            <div className="containerCount">
+                Contador Nro: {this.props.id}
+                <p>Creado: 10/10/2020</p>
+                <p>Actualizado: 10/10/2020</p>
+                <div className="buttonsCount">
+                    <button>-</button>
+                    <p>14</p>
+                    <button>+</button>
+                    <button onClick={this.props.delete}>Eliminar</button>
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default Count;
