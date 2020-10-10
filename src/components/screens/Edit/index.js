@@ -5,28 +5,6 @@ import Buttons from '../Buttons/index';
 class Edit extends React.Component {
     constructor(props) {
         super(props)
-      }
-
-      state = {
-          name:this.props.name,
-          year:this.props.year,
-          status:false
-      }
-      
-    setValues = (e) => {
-        this.setState({
-            name: e.target.value,
-            year: e.target.value
-        })
-    }
-
-    saveValues = () => {
-        this.setState({
-             name: this.state.name,
-             year: this.state.year,
-             status: this.state.status ? false : true
-           });
-           {console.log('Save Values:',this.state)}
     }
 
     render() {
@@ -39,17 +17,13 @@ class Edit extends React.Component {
                         type="text" 
                         name="name" 
                         defaultValue={this.props.name}
-                        onChange={ e => this.setState({
-                            name: e.target.value 
-                        })}
+                        onChange={this.props.setName}
                         />
                         <input 
                         type="text" 
                         name="year"
                         defaultValue={this.props.year} 
-                        onChange={ e => this.setState({
-                            year: e.target.value 
-                        })}
+                        onChange={this.props.setYear}
                         />
                     </form>
                 </div>
@@ -59,7 +33,7 @@ class Edit extends React.Component {
                     name={this.name}
                     year={this.year}
                     status={this.status}
-                    onClick={this.saveValues}
+                    onClick={this.props.saveValue}
                 />
             </div>
             {/* {console.log(this.state.status)} */}

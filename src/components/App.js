@@ -7,7 +7,6 @@ class App extends React.Component {
     constructor(props) {
       super(props)
       var d = new Date();
-      
 
       this.state= {
         name:"Fausto",
@@ -21,7 +20,27 @@ class App extends React.Component {
         this.setState({
             status: this.state.status ? false : true
           });
+    }
 
+    saveValues = () => {
+      this.setState({
+           name: this.state.name,
+           year: this.state.year,
+           status: this.state.status ? false : true
+         });
+         {console.log('Save Values:',this.state)}
+    }
+
+    setName = (e) => {
+      this.setState({
+          name: e.target.value,
+      })
+    }
+
+    setYear= (e) => {
+      this.setState({
+          year: e.target.value,
+      })
     }
 
     render() {
@@ -40,6 +59,9 @@ class App extends React.Component {
             year={this.state.year}
             status={this.state.status}
             date={this.state.date}
+            saveValue={this.saveValues}
+            setName={this.setName}
+            setYear={this.setYear}
         />}
         </>
         )
