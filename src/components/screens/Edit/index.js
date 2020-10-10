@@ -15,17 +15,18 @@ class Edit extends React.Component {
       
     setValues = (e) => {
         this.setState({
-            name: e.target.value
+            name: e.target.value,
+            year: e.target.value
         })
     }
 
     saveValues = () => {
         this.setState({
-            name: this.state.name,
-            year: this.state.year,
-            status: this.state.status ? false : true
-          });
-          {console.log('Save Values:',this.state)}
+             name: this.state.name,
+             year: this.state.year,
+             status: this.state.status ? false : true
+           });
+           {console.log('Save Values:',this.state)}
     }
 
     render() {
@@ -39,7 +40,7 @@ class Edit extends React.Component {
                         name="name" 
                         defaultValue={this.props.name}
                         onChange={ e => this.setState({
-                            name: e.target.value
+                            name: e.target.value 
                         })}
                         />
                         <input 
@@ -61,7 +62,7 @@ class Edit extends React.Component {
                     onClick={this.saveValues}
                 />
             </div>
-            {console.log(this.state.status)}
+            {/* {console.log(this.state.status)} */}
         </div>
         )
     }
