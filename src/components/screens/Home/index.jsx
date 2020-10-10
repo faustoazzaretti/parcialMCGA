@@ -3,12 +3,7 @@ import React from 'react';
 import Card from '../Card/index';
 import Buttons from '../Buttons/index';
 
-
 class Home extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <div className="containerHome">

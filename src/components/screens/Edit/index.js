@@ -1,5 +1,6 @@
 import './styles.css';
 import React from 'react';
+import {BrowserRouter as Router,Route} from 'react-router-dom';
 import Buttons from '../Buttons/index';
 
 class Edit extends React.Component {
@@ -9,8 +10,9 @@ class Edit extends React.Component {
 
     render() {
         return(
-            <div className="containerHome">
-            <div className="card">
+            <>
+                <div className="containerHome">
+                <div className="card">
                 <div className="inputsCard">
                     <form>
                         <input 
@@ -38,6 +40,7 @@ class Edit extends React.Component {
             </div>
             {/* {console.log(this.state.status)} */}
         </div>
+            </>
         )
     }
 }

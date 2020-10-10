@@ -39,7 +39,7 @@ class ListCounts extends React.Component {
             <div className="containerListCounts">
                 <h1>Lista de Contadores</h1>
                 <button onClick={this.addCount}>Agregar Contador</button>
-                <button><Link to="home">Volver al inicio</Link></button>
+                <button><Link to="/">Back To Home</Link></button>
                     <div className="countsList">
                         {
                         this.state.countsArray.map((count,index)=>{

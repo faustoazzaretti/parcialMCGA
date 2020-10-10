@@ -1,6 +1,6 @@
 import './styles.css';
 import React from 'react';
-
+import {Link} from 'react-router-dom';
 
 const Buttons = (props) => {
     return(
@@ -12,12 +12,13 @@ const Buttons = (props) => {
                 {props.b1}
                 </button>
                 <button>
-                {props.b2}
+                <Link to="/listCounts">Agregar Contador</Link>
                 </button>
                 </> : <>
                 <button onClick = {props.onClick}>{props.b1}
                 </button>
-                <button>{props.b2}
+                <button>
+                <Link to="/listCounts">Agregar Contador</Link>
                 </button> 
                 </>
            }
