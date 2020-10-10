@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from './screens/Home/index';
 import Edit from './screens/Edit/index';
-import ListCount from './screens/ListCounts/index';
+import Count from './screens/Count/index';
 
 class App extends React.Component {
     constructor(props) {
@@ -25,7 +25,7 @@ class App extends React.Component {
     render() {
         return(
         <>
-        <ListCount/>
+        <Count/>
         {/* { this.state.status ? <Home 
             name={this.state.name}
             year={this.state.year}
