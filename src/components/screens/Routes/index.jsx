@@ -6,11 +6,11 @@ import ListCount from '../ListCounts/index';
 const Routes = () => {
     return (
         <>
-        <BrowserRouter>
-            <Redirect exact from="/" to="/home" component={Home} />
-            <Route exact path="/home" component={Home} />
-            <Route exact path="/listCount" component={ListCount} />
-        </BrowserRouter>
+            <BrowserRouter>
+                <Redirect exact from="/" to="/home" component={Home} />
+                <Route exact path="/home" component={Home} />
+                <Route exact path="/listCount" component={ListCount} />
+            </BrowserRouter>
         </>
     );
 };

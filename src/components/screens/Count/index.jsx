@@ -3,7 +3,7 @@ import React from 'react';
 
 class Count extends React.Component {
     render() {
-        return(
+        return (
             <div className="containerCount">
                 Contador Nro: {this.props.id}
                 <p>Creado: {this.props.date}</p>
@@ -12,8 +12,8 @@ class Count extends React.Component {
                     <button onClick={this.props.decrement}>-</button>
                     <p>{this.props.number}</p>
                     <button onClick={this.props.incretmen}>+</button>
-                    <button onClick={this.props.delete}>Eliminar</button>
                 </div>
+                <button onClick={this.props.delete}>Eliminar</button>
             </div>
         )
     }

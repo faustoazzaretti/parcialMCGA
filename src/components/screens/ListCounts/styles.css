@@ -6,10 +6,43 @@
     width: 100%;
     min-height: 100vh;
     height: auto;
-    background-color: #2980b9;
+    background-color: #102531;
+    color: white;
 }
 
-.countsList {
+.containerListCounts .topButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.containerListCounts .topButtons button {
+    width: 30%;
+    height: 50px;
+    margin: 20px;
+    font-size:20px;
+    color: white;
+    background-color: #0D202B;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.containerListCounts .topButtons button:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+.containerListCounts .topButtons button a{
+    text-decoration: none;
+    color: white;
+}
+
+.containerListCounts .topButtons button a:hover{
+    color: yellow;
+    cursor: pointer;
+}
+.containerListCounts .countsList {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,3 +50,4 @@
     width: 80%;
     height: auto;
 }
+

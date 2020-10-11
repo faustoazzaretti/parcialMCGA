@@ -12,6 +12,7 @@
     border-radius: 5px;
     font-size:20px;
     font-weight: bold;
+    
 }
 
 .containerButtons button:nth-child(2) {
@@ -19,6 +20,14 @@
     color: black;
 }
 
+.containerButtons button:nth-child(2) a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
 .containerButtons button:hover {
     cursor: pointer;
 }
+
+
