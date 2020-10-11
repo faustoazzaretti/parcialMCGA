@@ -9,7 +9,6 @@ const App = () => (
       <Redirect to="/" component={Index} />
       <Route path="/" exact component={Index} />
       <Route path="/counters"><ListCounts /></Route>
-      {/* <Route path="/listCounts" exact component={ListCounts} /> */}
     </Router>
   </>
 )

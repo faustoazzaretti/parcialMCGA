@@ -22,7 +22,7 @@ const Buttons = (props) => {
                         </button>
                     </>
             }
-        </div >
+        </div >                                     
     )
 }
 

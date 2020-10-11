@@ -6,12 +6,10 @@ class Index extends React.Component {
     constructor(props) {
         super(props)
         var d = new Date();
-
         this.state = {
             name: "Fausto",
             year: "1995",
-            status: true,
-            date: Date("23 Jun 2017 07:45:00")
+            status: true
         };
     }
 
@@ -45,15 +43,15 @@ class Index extends React.Component {
     render() {
         return (
             <>
-                { this.state.status ? <Home
-                    name={this.state.name}
-                    year={this.state.year}
-                    status={this.state.status}
-                    onClick={this.changeScreen}
-                    date={this.state.date}
-
-
-                /> : <Edit
+                { this.state.status ? 
+                    <Home
+                        name={this.state.name}
+                        year={this.state.year}
+                        status={this.state.status}
+                        onClick={this.changeScreen}
+                        date={this.state.date}
+                /> : 
+                    <Edit
                         name={this.state.name}
                         year={this.state.year}
                         status={this.state.status}
@@ -61,7 +59,8 @@ class Index extends React.Component {
                         saveValue={this.saveValues}
                         setName={this.setName}
                         setYear={this.setYear}
-                    />}
+                    />
+                }
             </>
         )
     }
