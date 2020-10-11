@@ -12,13 +12,13 @@ const Buttons = (props) => {
                             {props.b1}
                         </button>
                         <button>
-                            <Link to="/listCounts">Agregar Contador</Link>
+                            <Link to="/counters">Agregar Contador</Link>
                         </button>
                     </> : <>
                         <button onClick={props.onClick}>{props.b1}
                         </button>
                         <button>
-                            <Link to="/listCounts">Agregar Contador</Link>
+                            <Link to="/counters">Agregar Contador</Link>
                         </button>
                     </>
             }
