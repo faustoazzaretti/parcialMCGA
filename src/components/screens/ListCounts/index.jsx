@@ -7,10 +7,13 @@ class ListCounts extends React.Component {
     constructor(props) {
         super(props)
         this.countID = 0;
+        var d = new Date();
         this.state = {
-            date:props.date,
             countsArray:[],
             id: "",
+            name:props.name,
+            date: d.toLocaleString(),
+            number:1
         }
     }
     
@@ -18,11 +21,11 @@ class ListCounts extends React.Component {
         this.countID = this.countID + 1;
         const copyCountsArray = Object.assign([], this.state.countsArray)
         copyCountsArray.push({
-            id: this.countID,
-
+            id: this.countID
         })
         this.setState({
-            countsArray : copyCountsArray
+            countsArray : copyCountsArray,
+            date: this.state.date
         })
     }
 
@@ -34,10 +37,27 @@ class ListCounts extends React.Component {
         })
     }
 
+    decrement = (index) => {
+        const copyNumber = Object.assign(this.state.number)
+        console.log(index)
+        this.number = this.state.number - 1
+        this.setState({
+            number : this.number
+        })
+    }
+
+    incretmen = (index) => {
+        console.log(index)
+        this.number = this.state.number + 1
+        this.setState({
+            number : this.number
+        })
+    }
+
     render() {
         return(
             <div className="containerListCounts">
-                <h1>Lista de Contadores</h1>
+                <h1>Lista de Contadores de {this.state.name}</h1>
                 <button onClick={this.addCount}>Agregar Contador</button>
                 <button><Link to="/">Back To Home</Link></button>
                     <div className="countsList">
@@ -48,7 +68,10 @@ class ListCounts extends React.Component {
                                     key={count.id}
                                     id={count.id}
                                     delete={this.deleteCount.bind(this,index)}
-                                    date={this.props.date}
+                                    decrement={this.decrement.bind(this,index)}
+                                    incretmen={this.incretmen.bind(this,index)}   
+                                    date={this.state.date}
+                                    number={this.state.number}
                                 />
                             )
                         })
@@ -57,8 +80,6 @@ class ListCounts extends React.Component {
             </div>
         )
     }
-
 }
-
 
 export default ListCounts;

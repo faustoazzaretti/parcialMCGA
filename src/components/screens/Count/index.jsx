@@ -7,11 +7,11 @@ class Count extends React.Component {
             <div className="containerCount">
                 Contador Nro: {this.props.id}
                 <p>Creado: {this.props.date}</p>
-                <p>Actualizado: 10/10/2020</p>
+                <p>Actualizado: {this.props.newDate}</p>
                 <div className="buttonsCount">
-                    <button>-</button>
-                    <p>14</p>
-                    <button>+</button>
+                    <button onClick={this.props.decrement}>-</button>
+                    <p>{this.props.number}</p>
+                    <button onClick={this.props.incretmen}>+</button>
                     <button onClick={this.props.delete}>Eliminar</button>
                 </div>
             </div>
