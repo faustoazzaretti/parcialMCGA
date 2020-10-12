@@ -22,14 +22,10 @@
     height: 50px;
     margin: 20px;
     font-size:20px;
-    color: white;
-    background-color: #0D202B;
-    border: 1px solid white;
-    border-radius: 10px;
 }
 
 .containerListCounts .topButtons button:hover {
-    color: yellow;
+    color: #102531;
     cursor: pointer;
 }
 
@@ -39,7 +35,7 @@
 }
 
 .containerListCounts .topButtons button a:hover{
-    color: yellow;
+    color: black;
     cursor: pointer;
 }
 .containerListCounts .countsList {

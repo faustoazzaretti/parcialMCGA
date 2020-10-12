@@ -1,7 +1,7 @@
 .containerButtons {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
     height: 200px;
     margin-top: 30px;
 }
@@ -15,15 +15,10 @@
     
 }
 
-.containerButtons button:nth-child(2) {
-    background-color: #27ae60;
-    color: black;
-}
-
 .containerButtons button:nth-child(2) a{
     text-decoration: none;
     list-style: none;
-    color: black;
+    color: white;
 }
 
 .containerButtons button:hover {

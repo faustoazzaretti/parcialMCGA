@@ -1,6 +1,7 @@
 import './styles.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Button } from '@material-ui/core';
 
 const Buttons = (props) => {
     return (
@@ -8,18 +9,33 @@ const Buttons = (props) => {
             {
                 props.status ?
                     <>
-                        <button onClick={props.onClick}>
+                        <Button 
+                            variant="contained" 
+                            color="secondary"
+                            onClick={props.onClick}
+                        >
                             {props.b1}
-                        </button>
-                        <button>
-                            <Link to="/counters">Agregar Contador</Link>
-                        </button>
+                        </Button>
+                        <Button 
+                            variant="contained" 
+                            color="primary"
+                        >
+                            <Link to="/counters">LISTA CONTADORES</Link>
+                        </Button>
                     </> : <>
-                        <button onClick={props.onClick}>{props.b1}
-                        </button>
-                        <button>
-                            <Link to="/counters">Agregar Contador</Link>
-                        </button>
+                    <Button 
+                            variant="contained" 
+                            color="secondary"
+                            onClick={props.onClick}
+                        >
+                            {props.b1}
+                        </Button>
+                        <Button 
+                            variant="contained" 
+                            color="primary"
+                        >
+                            <Link to="/counters">LISTA CONTADORES</Link>
+                        </Button>
                     </>
             }
         </div >                                     
