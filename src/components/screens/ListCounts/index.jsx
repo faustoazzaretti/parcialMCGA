@@ -6,6 +6,7 @@ import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import SaveIcon from '@material-ui/icons/Save';
+import NoteAddIcon from '@material-ui/icons/Save';
 
 class ListCounts extends React.Component {
     constructor(props) {
@@ -53,7 +54,7 @@ class ListCounts extends React.Component {
                     <Button
                         variant="contained"
                         color="default"
-                        startIcon={<CloudUploadIcon />}
+                        startIcon={<NoteAddIcon />}
                         onClick={this.addCount}
                     >
                         Agregar Contador

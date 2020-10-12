@@ -1,6 +1,10 @@
 import './styles.css';
 import React from 'react';
-
+import IconButton from '@material-ui/core/IconButton';
+import NoteAddIcon from '@material-ui/icons/NoteAdd';
+import DeleteIcon from '@material-ui/icons/Delete';
+import AddIcon from '@material-ui/icons/Add';
+import RemoveIcon from '@material-ui/icons/Remove';
 class Count extends React.Component {
     constructor(props) {
         super(props);
@@ -31,15 +35,32 @@ class Count extends React.Component {
     render() {
         return (
             <div className="containerCount" >
-                Contador Nro: {this.props.id}
-                <p>Creado: {this.props.date}</p>
-                <p>Actualizado: {this.state.newDate}</p>
-                <div className="buttonsCount">
-                    <button onClick={this.decrement}>-</button>
-                    <p>{this.state.count}</p>
-                    <button onClick={this.increment}>+</button>
+                <div className="textCount">
+                    Contador Nro: {this.props.id}<br/>
+                    Creado: {this.props.date}<br/>
+                    Actualizado: {this.state.newDate}
                 </div>
-                <button onClick={this.props.delete}>Eliminar</button>
+                <div className="buttonsCount">
+                    <IconButton aria-label="delete">
+                        <RemoveIcon 
+                            onClick={this.decrement}
+                            style={{ fontSize: '50px' }} 
+                        />
+                    </IconButton> 
+                    <h1>{this.state.count}</h1>
+                    <IconButton aria-label="delete">
+                        <AddIcon 
+                            onClick={this.increment}
+                            style={{ fontSize: '50px' }} 
+                        />
+                    </IconButton> 
+                </div>
+                <IconButton aria-label="delete"
+                    onClick={this.props.delete}
+                >
+                        <DeleteIcon/>
+                        Delete Count
+                </IconButton>
             </div> 
         )       
     }

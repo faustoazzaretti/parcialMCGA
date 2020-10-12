@@ -3,18 +3,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
     border: 1px solid black;
-    background-color: #2980b9;
+    background-color: #ccc;
     border-radius: 10px;
     margin: 20px;
     color: black;
 }
 
+.containerCount .textCount {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 45%;
+    width: 70%;
+}
+
 .buttonsCount {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 50%;
 }     
 
