@@ -1,6 +1,11 @@
 import './styles.css';
 import React from 'react';
 import Buttons from '../Buttons/index';
+import FilledInput from '@material-ui/core/FilledInput';
+import FormControl from '@material-ui/core/FormControl';
+import Input from '@material-ui/core/Input';
+import InputLabel from '@material-ui/core/InputLabel';
+
 
 class Edit extends React.Component {
     constructor(props) {
@@ -14,22 +19,26 @@ class Edit extends React.Component {
                     <div className="card">
                         <div className="inputsCard">
                             <form>
-                                <input
-                                    type="text"
-                                    name="name"
-                                    defaultValue={this.props.name}
-                                    onChange={this.props.setName}
-                                />
-                                <input
-                                    type="text"
-                                    name="year"
-                                    defaultValue={this.props.year}
-                                    onChange={this.props.setYear}
-                                />
+                                <FormControl>
+                                    <InputLabel htmlFor="component-simple">Nombre:</InputLabel>
+                                    <Input 
+                                        id="component-simple"  
+                                        defaultValue={this.props.name} 
+                                        onChange={this.props.setName}
+                                    />
+                                </FormControl>
+                                <FormControl>
+                                    <InputLabel htmlFor="component-simple">Año:</InputLabel>
+                                    <Input 
+                                        id="component-simple"  
+                                        defaultValue={this.props.year}
+                                        onChange={this.props.setYear}
+                                    />
+                                </FormControl>
                             </form>
                         </div>
                         <Buttons
-                            b1={'Guardar Informacion'}
+                            b1={'Guardar'}
                             b2={'Agregar Contador'}
                             name={this.name}
                             year={this.year}
