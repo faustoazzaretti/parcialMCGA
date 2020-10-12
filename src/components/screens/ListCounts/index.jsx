@@ -41,24 +41,6 @@ class ListCounts extends React.Component {
         })
     }
 
-    decrement = (index) => {
-        const copyNumber = Object.assign(this.state.number)
-        console.log(index)
-        this.number = this.state.number - 1
-        this.setState({
-            number: this.number
-        })
-    }
-
-    incretmen = (index) => {
-        const copyNumber = Object.assign(this.state.number)
-        console.log(index)
-        this.number = this.state.number + 1
-        this.setState({
-            number: this.number
-        })
-    }
-
     render() {
         return (
             <div className="containerListCounts">
@@ -75,10 +57,7 @@ class ListCounts extends React.Component {
                                     key={count.id}
                                     id={count.id}
                                     delete={this.deleteCount.bind(this, index)}
-                                    decrement={this.decrement.bind(this, index)}
-                                    incretmen={this.incretmen.bind(this, index)}
                                     date={this.state.date}
-                                    number={this.state.number}
                                 />
                             )
                         })
