@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from '../Home/index';
 import Edit from '../Edit/index';
+import swal from 'sweetalert';
 
 class Index extends React.Component {
     constructor(props) {
@@ -20,6 +21,8 @@ class Index extends React.Component {
     }
 
     saveValues = () => {
+        this.state.name === "" || this.state.year === "" ? 
+        swal ( "Error" ,  "El nombre no debe estar vacio!" ,  "error" ) :
         this.setState({
             name: this.state.name,
             year: this.state.year,
@@ -59,6 +62,7 @@ class Index extends React.Component {
                         saveValue={this.saveValues}
                         setName={this.setName}
                         setYear={this.setYear}
+                        validate={this.validate}
                     />
                 }
             </>

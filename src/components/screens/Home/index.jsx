@@ -4,6 +4,7 @@ import Card from '../Card/index';
 import Buttons from '../Buttons/index';
 
 class Home extends React.Component {
+    
     render() {
         return (
             <div className="containerHome">

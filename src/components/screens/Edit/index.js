@@ -6,12 +6,11 @@ import FormControl from '@material-ui/core/FormControl';
 import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
 
-
 class Edit extends React.Component {
     constructor(props) {
         super(props)
     }
-
+    
     render() {
         return (
             <>
@@ -29,7 +28,7 @@ class Edit extends React.Component {
                                 </FormControl>
                                 <FormControl>
                                     <InputLabel htmlFor="component-simple">Año:</InputLabel>
-                                    <Input 
+                                    <Input
                                         id="component-simple"  
                                         defaultValue={this.props.year}
                                         onChange={this.props.setYear}

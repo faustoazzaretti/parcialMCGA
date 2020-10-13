@@ -7,12 +7,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import SaveIcon from '@material-ui/icons/Save';
 import NoteAddIcon from '@material-ui/icons/Save';
+import swal from 'sweetalert';
 
 class ListCounts extends React.Component {
     constructor(props) {
         super(props)
         this.countID = 0;
-        this.countNumber = 0;
         var d = new Date();
         this.state = {
             countsArray: [],
@@ -25,17 +25,16 @@ class ListCounts extends React.Component {
 
     addCount = () => {
         this.countID = this.countID + 1;
-        this.countNumber = this.countNumber;
         const copyCountsArray = Object.assign([], this.state.countsArray)
         copyCountsArray.push({
-            id: this.countID,
-            countNumber: this.countNumber
+            id: this.countID
         })
         this.setState({
             countsArray: copyCountsArray,
             date: this.state.date
         })
         console.log(this.state.countsArray)
+        swal("SI PADREEE", "AGREGASTE UN CONTADOR PAPUUUUU!", "success");
     }
 
     deleteCount = (index) => {

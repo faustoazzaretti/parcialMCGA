@@ -5,13 +5,15 @@ import NoteAddIcon from '@material-ui/icons/NoteAdd';
 import DeleteIcon from '@material-ui/icons/Delete';
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
+
 class Count extends React.Component {
     constructor(props) {
         super(props);
         var d = new Date();
         this.state = {
             count: 1,
-            newDate: d.toLocaleString()
+            newDate: d.toLocaleString(),
+            date: props.date
         };
     }
 

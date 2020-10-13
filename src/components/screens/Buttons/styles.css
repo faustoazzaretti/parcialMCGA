@@ -25,4 +25,15 @@
     cursor: pointer;
 }
 
+@media (max-width: 400px) {
+    .containerButtons {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 200px;
+        margin-top: 30px;
+    }
+    
+}
+
 
