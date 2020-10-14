@@ -8,7 +8,7 @@ class Index extends React.Component {
         super(props)
         var d = new Date();
         this.state = {
-            name: "Fausto",
+            name: "Fausto Azzaretti",
             year: "1995",
             status: true
         };
