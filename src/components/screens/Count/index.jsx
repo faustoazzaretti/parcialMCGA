@@ -63,6 +63,7 @@ class Count extends React.Component {
                         <DeleteIcon/>
                         Delete Count
                 </IconButton>
+                {/* {console.log('props')} */}
             </div> 
         )       
     }
