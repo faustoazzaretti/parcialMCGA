@@ -34,7 +34,6 @@ class ListCounts extends React.Component {
             date: this.state.date
         })
         console.log(this.state.countsArray)
-        swal("SI PADREEE", "AGREGASTE UN CONTADOR PAPUUUUU!", "success");
     }
 
     deleteCount = (index) => {
