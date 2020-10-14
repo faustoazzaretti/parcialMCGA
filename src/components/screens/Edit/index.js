@@ -38,7 +38,6 @@ class Edit extends React.Component {
                         </div>
                         <Buttons
                             b1={'Guardar'}
-                            b2={'Agregar Contador'}
                             name={this.name}
                             year={this.year}
                             status={this.status}

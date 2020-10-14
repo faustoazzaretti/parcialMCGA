@@ -3,11 +3,8 @@ import React from 'react';
 import Count from '../Count/index';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
-import { makeStyles } from '@material-ui/core/styles';
-import CloudUploadIcon from '@material-ui/icons/CloudUpload';
 import SaveIcon from '@material-ui/icons/Save';
 import NoteAddIcon from '@material-ui/icons/Save';
-import swal from 'sweetalert';
 
 class ListCounts extends React.Component {
     constructor(props) {
@@ -62,6 +59,7 @@ class ListCounts extends React.Component {
                         color="primary"
                         size="small"
                         startIcon={<SaveIcon />}
+                        
                     >
                         <Link to="/">VOLVER AL INICIO</Link>
                     </Button>
@@ -76,7 +74,7 @@ class ListCounts extends React.Component {
                                     delete={this.deleteCount.bind(this, index)}
                                     date={this.state.date}
                                 />
-                            )
+                            ) 
                         })
                     }
                 </div>
