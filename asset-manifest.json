@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/parcialMCGA/static/css/main.4f259f75.chunk.css",
+    "main.js": "/parcialMCGA/static/js/main.63119cbe.chunk.js",
+    "main.js.map": "/parcialMCGA/static/js/main.63119cbe.chunk.js.map",
+    "runtime-main.js": "/parcialMCGA/static/js/runtime-main.24699c62.js",
+    "runtime-main.js.map": "/parcialMCGA/static/js/runtime-main.24699c62.js.map",
+    "static/js/2.26ca5088.chunk.js": "/parcialMCGA/static/js/2.26ca5088.chunk.js",
+    "static/js/2.26ca5088.chunk.js.map": "/parcialMCGA/static/js/2.26ca5088.chunk.js.map",
+    "index.html": "/parcialMCGA/index.html",
+    "precache-manifest.0ab1feed6c4e29454f17b99db3d3b717.js": "/parcialMCGA/precache-manifest.0ab1feed6c4e29454f17b99db3d3b717.js",
+    "service-worker.js": "/parcialMCGA/service-worker.js",
+    "static/css/main.4f259f75.chunk.css.map": "/parcialMCGA/static/css/main.4f259f75.chunk.css.map",
+    "static/js/2.26ca5088.chunk.js.LICENSE.txt": "/parcialMCGA/static/js/2.26ca5088.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.24699c62.js",
+    "static/js/2.26ca5088.chunk.js",
+    "static/css/main.4f259f75.chunk.css",
+    "static/js/main.63119cbe.chunk.js"
+  ]
+}
