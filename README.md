@@ -1,3 +1,7 @@
+# Parcial MCGA 
+## Fausto Azzaretti
+## [Try App] (https://faustoazzaretti.github.io/parcialMCGA)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

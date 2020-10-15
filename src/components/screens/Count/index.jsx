@@ -12,13 +12,11 @@ class Count extends React.Component {
         var d = new Date();
         this.state = {
             count: 1,
-            newDate: d.toLocaleString(),
-            date: props.date
+            newDate: d.toLocaleString()
         };
     }
 
     decrement =() => {
-        console.log('decccc')
         let newValue = this.state.count;
         this.setState({
             count: (newValue - 1),

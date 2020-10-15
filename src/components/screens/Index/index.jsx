@@ -21,6 +21,7 @@ class Index extends React.Component {
     }
 
     saveValues = () => {
+        //Validation
         this.state.name === "" || this.state.year === "" ? 
         swal ( "Error" ,  "El nombre no debe estar vacio!" ,  "error" ) :
         this.setState({
@@ -52,13 +53,11 @@ class Index extends React.Component {
                         year={this.state.year}
                         status={this.state.status}
                         onClick={this.changeScreen}
-                        date={this.state.date}
                 /> : 
                     <Edit
                         name={this.state.name}
                         year={this.state.year}
                         status={this.state.status}
-                        date={this.state.date}
                         saveValue={this.saveValues}
                         setName={this.setName}
                         setYear={this.setYear}

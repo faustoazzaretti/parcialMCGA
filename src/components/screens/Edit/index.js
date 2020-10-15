@@ -38,9 +38,6 @@ class Edit extends React.Component {
                         </div>
                         <Buttons
                             b1={'Guardar'}
-                            name={this.name}
-                            year={this.year}
-                            status={this.status}
                             onClick={this.props.saveValue}
                         />
                     </div>

@@ -6,9 +6,9 @@ import ListCounts from './screens/ListCounts/index';
 const App = () => (
   <>
     <Router>
-      <Redirect to="/" component={Index} />
-      <Route path="/" exact component={Index} />
-      <Route path="/counters"><ListCounts /></Route>
+        <Redirect to="/" component={Index} />
+        <Route path="/" exact component={Index} />
+        <Route path="/counters"><ListCounts /></Route>
     </Router>
   </>
 )

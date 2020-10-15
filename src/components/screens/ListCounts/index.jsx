@@ -9,14 +9,10 @@ import NoteAddIcon from '@material-ui/icons/Save';
 class ListCounts extends React.Component {
     constructor(props) {
         super(props)
-        this.countID = 0;
-        var d = new Date();
+        this.countID = 0
         this.state = {
             countsArray: [],
-            id: "",
-            name: props.name,
-            date: d.toLocaleString(),
-            number: 1
+            id: ""
         }
     }
 
@@ -72,7 +68,6 @@ class ListCounts extends React.Component {
                                     key={count.id}
                                     id={count.id}
                                     delete={this.deleteCount.bind(this, index)}
-                                    date={this.state.date}
                                 />
                             ) 
                         })

@@ -16,9 +16,6 @@ class Home extends React.Component {
                     />
                     <Buttons
                         b1={'Editar Informacion'}
-                        name={this.props.name}
-                        year={this.props.year}
-                        status={this.props.status}
                         onClick={this.props.onClick}
                     />
                 </div>
